@@ -1,0 +1,13 @@
+type Query {
+  like(url: String!): Like!
+}
+
+type Mutation {
+  addLike(url: String!): Like!
+}
+
+type Like {
+  _id: String!
+  url: String!
+  count: Int!
+}
